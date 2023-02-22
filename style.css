@@ -1,0 +1,49 @@
+
+body{
+
+    text-align: center;
+    background-color: white;
+    color:black;   
+}
+
+.dark-mode{
+
+    background-color:darkslategray;
+    color: white;
+}
+
+button{
+
+    margin:10px;
+    padding: 10px;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+
+    background-color: red;
+}
+
+h2 > img{
+
+    margin-right: 2%;
+    vertical-align: middle;
+
+}
+
+.mainarea{
+
+   width:100%;
+   display: flex; 
+   background-color: darkgoldenrod;
+}
+
+
+iframe{
+
+    width: 100%;
+    height:30em;
+    overflow:scroll;   
+}
