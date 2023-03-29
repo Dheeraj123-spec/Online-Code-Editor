@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+
+    <link rel="icon" type="image/x-icon" href="editor.ico">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+    <h1><img src="coding.png" width="3%" height="3%" style="vertical-align: middle; margin-right: 1%">LIVE CODE EDITOR</h1>
+
+    
+    
+    <button onclick="myfunction()">Change Theme</button>
+    
+
+    <div class="mainarea">
+
+    
+        
+        <div class="editors">
+           
+            <h2><img src="html.png" width="8%" height="8%">HTML</h2>
+
+            <textarea id="html" placeholder="HTML" style="width: 95%; min-height: 250px; overflow: scroll; font-size: 15px"></textarea>
+        </div>
+
+        
+        <div class="editors">
+            <h2><img src="css.png" width="8%" height="8%">CSS</h2>
+            <textarea id="css" placeholder="CSS" style="width: 95%; min-height: 250px; overflow: scroll; font-size: 15px"></textarea>
+        </div>
+
+        <div class="editors">
+            <h2><img src="js.png" width="8%" height="8%">Javascript</h2>
+            <textarea id="js" placeholder="Javascript" style="width: 95%; min-height: 250px; overflow:scroll; font-size: 15px"></textarea>
+
+        </div>
+
+
+    </div>
+
+    <div class="output">
+
+        <h2>OUTPUT</h2>
+
+        <iframe id="code"></iframe>
+
+    </div>
+
+    <script type="text/Javascript" src="app.js"></script>
+
+    <script>
+
+        function myfunction()
+        {
+            var ele=document.body
+            ele.classList.toggle("dark-mode");
+        }
+
+    </script>
+
+    
+ 
+</body>
+</html>
